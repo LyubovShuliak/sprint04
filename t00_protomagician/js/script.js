@@ -10,9 +10,6 @@ this.sayHello=()=>{
 }
 
 }
-
-
-
 function Human(job){
   this.job = job
   
@@ -26,14 +23,14 @@ function Human(job){
       this.title = title
       
       }
+      let dog, human, vampire
 
-      const  dog = Object.assign(new Creature("Kennu", 3, "dog"), new Dog("white"))
-      const human = Object.assign(new Creature("Linda", 26, "human"), new Human("programmer"))
-      const vampire = Object.assign(new Creature("Dracula", 1666, "vampire"), new Human("collector"), new Vampire("count") )
-    dog.sayHello()
-    console.log(human);
-    console.log(vampire);
-    console.log(dog);
+        dog = Object.assign(new Dog("white"), new Creature("Kennu", 3, "dog"))
+       human = Object.assign(new Human("programmer"), new Creature("Linda", 26, "human"))
+       vampire = Object.assign(new Vampire("count"), new Creature("Dracula", 1666, "vampire"), new Human("collector") )
+   console.log(dog);
+   console.log(human);
+   console.log(vampire);
 const magician = {
   _hat: './assets/images/hat.png',
   _getPortrait(){
